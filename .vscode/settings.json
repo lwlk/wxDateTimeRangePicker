@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.wxml": "wxml",
+        "*.wxss": "css",
+        "*.cjson": "jsonc",
+        "*.wxs": "javascript"
+    },
+    "editor.tabSize": 2,
+    "search.usePCRE2": true,
+    "eslint.enable": false
+}

@@ -1,0 +1,22 @@
+.date-time-range-picker .date-time-range-text {
+  margin: 15px;
+}
+.date-time-range-picker .date-time-range-text .begin-date-time-text {
+  height: 50px;
+  line-height: 50px;
+}
+.date-time-range-picker .date-time-range-text .end-date-time-text {
+  height: 50px;
+  line-height: 50px;
+}
+.date-time-range-picker .btn-row {
+  display: flex;
+}
+.date-time-range-picker .btn-row .open-btn {
+  margin: 0 15px;
+  flex: 1;
+}
+.date-time-range-picker .btn-row .submit-btn {
+  margin: 0 15px;
+  flex: 1;
+}

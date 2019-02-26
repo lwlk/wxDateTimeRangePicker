@@ -1,0 +1,35 @@
+<view class="date-time-range-picker">
+  <view class="date-time-range-text">
+    <view class="begin-date-time-text">开始时间：{{ view.beginDateTime }}</view>
+    <view class="end-date-time-text">结束时间：{{ view.endDateTime }}</view>
+  </view>
+  <view class="btn-row">
+    <button class="open-btn" ontap="handleDateTimeRangePickerClick">打开</button>
+    <button class="submit-btn" ontap="handleSubmit">提交</button>
+  </view>
+</view>
+
+<view class="stage">
+  <van-popup show="{{ view.showBeginDateTimePicker }}" position="bottom">
+    <van-picker
+      id="begin-date-time-picker" 
+      show-toolbar 
+      title="开始时间" 
+      columns="{{ view.beginDateTimePickerItems }}" 
+      confirmButtonText="下一步"
+      bind:change="handleBeginDateTimePickerChange" 
+      bind:confirm="handleBeginDateTimePickerConfirm" 
+      bind:cancel="handleBeginDateTimePickerCancel" />
+  </van-popup>
+  <van-popup show="{{ view.showEndDateTimePicker }}" position="bottom">
+    <van-picker 
+      id="end-date-time-picker" 
+      show-toolbar 
+      title="结束时间" 
+      columns="{{ view.endDateTimePickerItems }}" 
+      bind:change="handleEndDateTimePickerChange"
+      bind:confirm="handleEndDateTimePickerConfirm" 
+      bind:cancel="handleEndDateTimePickerCancel" />
+  </van-popup>
+  <van-dialog id="van-dialog" />  
+</view>
